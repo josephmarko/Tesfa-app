@@ -102,3 +102,7 @@ button:hover{
     color: var(--fontColor2);
     background-color: var(--buttonColor2);
 }
+
+a:active{
+    color: var(--fontColor1);
+}
