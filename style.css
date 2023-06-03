@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    /* Colors*/
+    --backgroundWhite: whitesmoke;
+    --fontColor1: coral;
+    --fontColor2: white;
+    --fontColor3: dimgray;
+    --fontColor4: red;
+    --fontColor5: green;
+    --fontColor6: yellow;
+    /* Buttons */
+    --buttonColor1: coral;
+    --buttonColor2: #ffa280e3;
+    --buttonColor: White;
+
+    /* Shadows */
+    --buttonShow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+    /* Profile icon */
+    --borderRadius: width:40px, height: 40px, 'border-radius': 50%;
+
+    /* FONT_SIZE */
+    --fontSize-button: 15px;
+    --fontSize-head: 25px;
+    --fontSize-label: 18px;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--backgroundWhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--buttonShow);
+    width: 300px;
+    height: 400px;
+}
+
+.logo{
+    width: 150px;
+    display: flex;
+
+    margin: 20px auto;
+}
+
+.head{
+    color: var(--fontColor1);
+    font-size:var(--fontSize-head);
+    font-weight: 600;
+    text-align: center;
+}
+
+button, a,.usr-input, .head{
+    display: block;
+    justify-content: center;
+    
+    margin: 10px auto;
+
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+.usr-input{
+    background-color:#e2dede;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+button{
+    background-color: var(--buttonColor1);
+    color: var(--fontColor2);
+    font-weight: 600;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--fontColor3);
+}
+
+button:hover{
+    color: var(--fontColor2);
+    background-color: var(--buttonColor2);
+}
