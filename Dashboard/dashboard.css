@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    /* Colors*/
+    --backgroundWhite: whitesmoke;
+    --fontColor1: coral;
+    --fontColor2: white;
+    --fontColor3: dimgray;
+    --fontColor4: red;
+    --fontColor5: green;
+    --fontColor6: yellow;
+    /* Buttons */
+    --buttonColor1: coral;
+    --buttonColor2: #ffa280e3;
+    --buttonColor: White;
+
+    /* Shadows */
+    --buttonShow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+    /* Profile icon */
+    --borderRadius: width:40px, height: 40px, 'border-radius': 50%;
+
+    /* FONT_SIZE */
+    --fontSize-button: 15px;
+    --fontSize-head: 25px;
+    --fontSize-label: 18px;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--backgroundWhite);
+}
+
+nav{
+    background-color: white;
+    box-shadow: var(--buttonShow);
+    grid-area: nav;
+}
+
+aside{
+    background-color: coral;
+    grid-area: side;
+}
+
+.stats{
+    background-color: white;
+    grid-area: box;
+}
+
+main{
+    background-color: white;
+    grid-area: main;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.2fr 1.5fr;
+    grid-template-areas: 
+    'nav nav nav nav nav'
+    'side box box box box'
+    'side main main main main'
+    ;
+    gap: 0.5rem;
+    height: 100vh;
+}
