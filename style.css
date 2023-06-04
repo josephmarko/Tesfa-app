@@ -90,6 +90,7 @@ button{
     background-color: var(--buttonColor1);
     color: var(--fontColor2);
     font-weight: 600;
+    box-shadow: var(--buttonShow);
 }
 
 a{
@@ -105,4 +106,23 @@ button:hover{
 
 a:active{
     color: var(--fontColor1);
+}
+
+.log-in{
+    font-weight: 600;
+}
+
+.log-in:hover{
+    color: var(--fontColor1);
+}
+
+@media screen and (max-width: 550px){
+    form{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    img{
+        margin-top: 50px;
+    }
 }
