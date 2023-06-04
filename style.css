@@ -2,16 +2,18 @@
 
 :root{
     /* Colors*/
-    --backgroundWhite: whitesmoke;
-    --fontColor1: coral;
+    --background1: #F2F2F2;
+    --background2:#F2C49B;
+    --background3: #F28B30;
+    --fontColor1: #F28b30;
     --fontColor2: white;
-    --fontColor3: dimgray;
-    --fontColor4: red;
-    --fontColor5: green;
-    --fontColor6: yellow;
+    --confirm: #BFD1D9;
+    --warning: red;
+    --condition: green;
+    --Neutral: #BFD1D9;
     /* Buttons */
-    --buttonColor1: coral;
-    --buttonColor2: #ffa280e3;
+    --buttonColor1: #F28B30;
+    --buttonColor2: #F2C49B;
     --buttonColor: White;
 
     /* Shadows */

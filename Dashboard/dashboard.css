@@ -2,8 +2,10 @@
 
 :root{
     /* Colors*/
-    --backgroundWhite: whitesmoke;
-    --fontColor1: coral;
+    --background1: #F2F2F2;
+    --background2:#F2C49B;
+    --background3: #F28B30;
+    --fontColor1: #F28b30;
     --fontColor2: white;
     --fontColor3: dimgray;
     --fontColor4: red;
@@ -42,20 +44,103 @@ nav{
     background-color: white;
     box-shadow: var(--buttonShow);
     grid-area: nav;
+    padding: 3px;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'logo srch srch srch prof';
+    gap: 10px;
+    
+    align-items: center;
+}
+
+.logo-site{
+    grid-area: logo;
+    margin: 0 10px;
+}
+
+.search{
+    grid-area: srch;
+}
+
+.head-links{
+    grid-area: prof;
+}
+
+.material-symbols-outlined{
+    color:var(--background2);
+}
+
+a{
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+input[name ='search']{
+    width: 80%;
+    height: 30px;
+    padding-left: 40px;
+    outline: 0;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+#lens, #tweaks{
+    display: inline;
+    position: absolute;
+    top: 2.2%;
+}
+
+#lens{
+    left:17.5%;
+}
+
+#tweaks{
+right:34%;
 }
 
 aside{
     background-color: coral;
     grid-area: side;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+
+    display: block;
+    justify-content: center;
+    padding: 5px;
+}
+
+h3{
+    color: #F2F2F2;
+    font-size: 15px;
+    text-align: left;
+}
+
+.sd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 10px auto;
+}
+
+.add{
+    background-color:hwb(0 41% 59% / 0.61);
+}
+
+.user{
+    display: block;
+    width: 100%;
 }
 
 .stats{
-    background-color: white;
     grid-area: box;
 }
 
 main{
-    background-color: white;
     grid-area: main;
 }
 
@@ -66,8 +151,7 @@ main{
     grid-template-areas: 
     'nav nav nav nav nav'
     'side box box box box'
-    'side main main main main'
-    ;
-    gap: 0.5rem;
+    'side main main main main';
     height: 100vh;
+    background-color: whitesmoke;
 }
